@@ -17,9 +17,9 @@ def main():
     print("\n4. Salir")
     
     option = int(input("Que opcion desea ejecutar?"))
-    file = os.path.abspath("mazes/prueba2.bmp")
+    file = os.path.abspath("mazes/laberinto.bmp")
     matriximage.matrimage(file)
-    matrix = matriximage.matrimage("mazes/renderizada2.bmp")
+    matrix = matriximage.matrimage("mazes/renderizada.bmp")
     path = []
     
     if option == 1:
@@ -52,7 +52,7 @@ def main():
         print("Opcion no valida")
 
     if path != None:
-        linepath.pathlineart("mazes/renderizada2.bmp",path)
+        linepath.pathlineart("mazes/renderizada.bmp",path)
 
         
     
